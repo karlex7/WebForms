@@ -20,5 +20,18 @@ namespace WebFroms.BLL
             cities.Add(new City { IDCity = 5, Name = "Dubrovnik" });
             return cities;
         }
+        public string GetGrad(int id)
+        {
+            IList<City> cities = GetCities();
+
+            foreach (City c in cities)
+            {
+                if (c.IDCity==id)
+                {
+                    return c.Name;
+                }
+            }
+            return "";
+        }
     }
 }

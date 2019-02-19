@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using WebFroms.Models;
 
@@ -64,7 +65,20 @@ namespace WebFroms
 
         protected void RepeaterPerson_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
+            if (e.Item.ItemType==ListItemType.Item)
+            {
+                //Email
+                string id = ((Label)e.Item.FindControl("lblIDPerson")).Text;
+                Person p = handler.personHandler.GetPerson(Guid.Parse(id));
+                HtmlTableCell td = (HtmlTableCell)e.Item.FindControl("tdEmail");
+                td.Controls.Add(new HyperLink { Text = p.Emails[0] });
 
+                //Grad
+                string idGrad = ((Label)e.Item.FindControl("lblCity")).Text;
+                HtmlTableCell tdCity = (HtmlTableCell)e.Item.FindControl("city");
+                string cityName = handler.cityHandler.GetGrad(int.Parse(idGrad));
+                tdCity.Controls.Add(new Label { Text = cityName });
+            }
         }
     }
 }

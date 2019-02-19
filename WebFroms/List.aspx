@@ -78,6 +78,7 @@
                                     
                                     <tr>
                                         <asp:Label ID="lblIDPerson" CssClass="hidden" runat="server" Text='<%# Eval("IDPerson") %>'/>
+                                        <asp:Label ID="lblCity" runat="server" Text='<%# Eval("CityID") %>' CssClass="hidden"></asp:Label>
                                         <td>
                                             <%# Eval("FirstName") %>
                                         </td>
@@ -91,11 +92,9 @@
                                         <td>
                                             <%# Eval("Admin") %>
                                         </td>
+                                        <td id="city" runat="server"/>
                                         <td>
-                                            <asp:Label ID="lblCity" runat="server" Text='<%# Eval("CityID") %>' CssClass="hidden"></asp:Label>
-                                        </td>
-                                        <td>
-                                            <asp:HyperLink runat="server" Text="Edit" CssClass="btn btn-primary"/>
+                                            <asp:HyperLink runat="server" Text="Edit" CssClass="btn btn-primary"  NavigateUrl='<%# "~/Update.aspx?IDPerson="+ Eval("IDPerson") %>'/>
                                         </td>
                                     </tr>
 
