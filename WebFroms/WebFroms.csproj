@@ -96,6 +96,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Update.aspx" />
+    <Content Include="Login.aspx" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -119,6 +120,7 @@
     </Compile>
     <Compile Include="BLL\CityHandler.cs" />
     <Compile Include="BLL\Handler.cs" />
+    <Compile Include="BLL\LoginHandler.cs" />
     <Compile Include="BLL\PersonHandler.cs" />
     <Compile Include="Controls\EditPerson.ascx.cs">
       <DependentUpon>EditPerson.ascx</DependentUpon>
@@ -182,6 +184,13 @@
     </Compile>
     <Compile Include="Update.aspx.designer.cs">
       <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

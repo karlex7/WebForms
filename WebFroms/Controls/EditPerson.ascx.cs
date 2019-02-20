@@ -61,7 +61,9 @@ namespace WebFroms.Controls
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
-
+            Guid id = Guid.Parse(lblId.Text);
+            handler.personHandler.DeletePerson(id);
+            Response.Redirect("~/List.aspx");
         }
     }
 }

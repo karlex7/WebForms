@@ -13,6 +13,7 @@ namespace WebFroms.BLL
         public PersonHandler personHandler = new PersonHandler();
 
         public CityHandler cityHandler = new CityHandler();
+        public LoginHandler loginHandler = new LoginHandler();
         public Handler()
         {
             repo = RepoFactory.GetRepo(MyPage.ChangeDB());

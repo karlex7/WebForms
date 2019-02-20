@@ -17,6 +17,17 @@ namespace WebFroms
                 Theme = theme;
             }
         }
+        protected override void OnInitComplete(EventArgs e)
+        {
+            base.OnInitComplete(e);
+            if (!Request.Url.ToString().Contains("login"))
+            {
+                if (Request.Cookies["user"]==null&& Session["user"]==null)
+                {
+                    //Response.Redirect("~/Login.aspx");
+                }
+            }
+        }
 
         public static int ChangeDB()
         {

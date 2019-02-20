@@ -2,7 +2,5 @@
 
 7d5aacc6-d64f-4a76-82d9-93bda9f9fb05|Jura|Juric|123445678|123|False|1|mail@mail.com~mail2@mail.com~
 
-993b8d82-1b28-4c6b-8d21-77906428653a|wef|wef|+385989271722|123|True|1|hrenkarlo15@gmail.com~
-
 e057a16f-2b6f-4c57-b213-a51801b2b860|ime|prezime|12344545|123|False|1|ime@mail.hr~
 
