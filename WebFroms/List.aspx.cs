@@ -65,7 +65,7 @@ namespace WebFroms
 
         protected void RepeaterPerson_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-            if (e.Item.ItemType==ListItemType.Item)
+            if (e.Item.ItemType==ListItemType.Item || e.Item.ItemType==ListItemType.AlternatingItem)
             {
                 //Email
                 string id = ((Label)e.Item.FindControl("lblIDPerson")).Text;
