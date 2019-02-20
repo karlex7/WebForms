@@ -1,6 +1,2 @@
-55426334-1d17-4945-8311-26230146f8fd|Admin|Admin|123456789|123|True|1|admin@mail.com~admin@mail.hr~
-
-7d5aacc6-d64f-4a76-82d9-93bda9f9fb05|Jura|Juric|123445678|123|False|1|mail@mail.com~mail2@mail.com~
-
-e057a16f-2b6f-4c57-b213-a51801b2b860|ime|prezime|12344545|123|False|1|ime@mail.hr~
+7ea6dc90-6a34-4008-b80d-37767c92fb5f|Admin|Admin|123456789|123|True|1|admin@mail.hr~admin@mail.com~
 

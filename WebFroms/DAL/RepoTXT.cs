@@ -24,13 +24,14 @@ namespace WebFroms.DAL
                 //Ako ne postoji datoteka moramo dodati jedno usera da bi uopce mogli u aplikaciju
                 AddPerson(new Person
                 {
+                    IDPerson= Guid.Parse("7ea6dc90-6a34-4008-b80d-37767c92fb5f"),
                     FirstName = "Admin",
                     Surname = "Admin",
                     Telephone = "123456789",
                     Password = "123",
                     Admin = true,
                     CityID = 1,
-                    Emails = new List<string> { "admin@mail.com", "admin@mail.hr" }
+                    Emails = new List<string> { "admin@mail.hr", "admin@mail.com" }
                 });
 
             }

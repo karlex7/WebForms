@@ -13,8 +13,8 @@ namespace WebFroms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetRepoLblText();
             CheckUser();
+            SetRepoLblText();
         }
 
         private void CheckUser()
